@@ -1,0 +1,11 @@
+D:\Visual\Proyectos_KMN_2022\Calculator\bin\Debug\Calculator.exe.config
+D:\Visual\Proyectos_KMN_2022\Calculator\bin\Debug\Calculator.exe
+D:\Visual\Proyectos_KMN_2022\Calculator\bin\Debug\Calculator.pdb
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.FrmCalculator.resources
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.exe
+D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.pdb

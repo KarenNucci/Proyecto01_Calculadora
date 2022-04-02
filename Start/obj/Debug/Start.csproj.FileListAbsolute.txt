@@ -1,0 +1,15 @@
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Start.exe.config
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Start.exe
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Start.pdb
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Calculator.exe
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Calculator.pdb
+D:\Visual\Proyectos_KMN_2022\Start\bin\Debug\Calculator.exe.config
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.AssemblyReference.cache
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.SuggestedBindingRedirects.cache
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.FrmStart.resources
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.Properties.Resources.resources
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.GenerateResource.cache
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.CoreCompileInputs.cache
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.CopyComplete
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.exe
+D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.pdb
