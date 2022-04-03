@@ -19,7 +19,7 @@ namespace Start
         {
             FrmCalculator calc = new FrmCalculator();
             calc.Show();
-            this.Close();
+            //this.Close();
         }
     }
 }

@@ -40,13 +40,14 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCalculation = new System.Windows.Forms.TextBox();
             this.btnDot = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAddition = new System.Windows.Forms.Button();
             this.btnSubtraction = new System.Windows.Forms.Button();
             this.btnMultiplication = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
+            this.btnEquals = new System.Windows.Forms.Button();
+            this.btCe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -54,12 +55,13 @@
             this.btn1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.Cyan;
-            this.btn1.Location = new System.Drawing.Point(148, 170);
+            this.btn1.Location = new System.Drawing.Point(24, 170);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(56, 52);
             this.btn1.TabIndex = 0;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -72,30 +74,33 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.Cyan;
-            this.btn3.Location = new System.Drawing.Point(24, 170);
+            this.btn3.Location = new System.Drawing.Point(148, 170);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(56, 52);
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.Cyan;
-            this.btn4.Location = new System.Drawing.Point(148, 112);
+            this.btn4.Location = new System.Drawing.Point(24, 112);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(56, 52);
             this.btn4.TabIndex = 3;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -108,18 +113,20 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.Cyan;
-            this.btn6.Location = new System.Drawing.Point(24, 112);
+            this.btn6.Location = new System.Drawing.Point(148, 112);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(56, 52);
             this.btn6.TabIndex = 5;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
@@ -132,6 +139,7 @@
             this.btn7.TabIndex = 6;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -144,6 +152,7 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -156,6 +165,7 @@
             this.btn9.TabIndex = 8;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn0
             // 
@@ -168,6 +178,7 @@
             this.btn0.TabIndex = 9;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnC
             // 
@@ -180,13 +191,15 @@
             this.btnC.TabIndex = 10;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
-            // textBox1
+            // tbCalculation
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 20);
-            this.textBox1.TabIndex = 11;
+            this.tbCalculation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCalculation.Location = new System.Drawing.Point(24, 22);
+            this.tbCalculation.Name = "tbCalculation";
+            this.tbCalculation.Size = new System.Drawing.Size(304, 29);
+            this.tbCalculation.TabIndex = 11;
             // 
             // btnDot
             // 
@@ -199,18 +212,7 @@
             this.btnDot.TabIndex = 12;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Cyan;
-            this.button1.Location = new System.Drawing.Point(272, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 168);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "0";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnAddition
             // 
@@ -223,6 +225,7 @@
             this.btnAddition.TabIndex = 14;
             this.btnAddition.Text = "+";
             this.btnAddition.UseVisualStyleBackColor = false;
+            this.btnAddition.Click += new System.EventHandler(this.btnAddition_Click);
             // 
             // btnSubtraction
             // 
@@ -235,6 +238,7 @@
             this.btnSubtraction.TabIndex = 15;
             this.btnSubtraction.Text = "-";
             this.btnSubtraction.UseVisualStyleBackColor = false;
+            this.btnSubtraction.Click += new System.EventHandler(this.btnSubtraction_Click);
             // 
             // btnMultiplication
             // 
@@ -247,6 +251,7 @@
             this.btnMultiplication.TabIndex = 16;
             this.btnMultiplication.Text = "x";
             this.btnMultiplication.UseVisualStyleBackColor = false;
+            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
             // 
             // btnDivision
             // 
@@ -259,6 +264,33 @@
             this.btnDivision.TabIndex = 17;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            // 
+            // btnEquals
+            // 
+            this.btnEquals.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEquals.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquals.ForeColor = System.Drawing.Color.Cyan;
+            this.btnEquals.Location = new System.Drawing.Point(272, 170);
+            this.btnEquals.Name = "btnEquals";
+            this.btnEquals.Size = new System.Drawing.Size(56, 110);
+            this.btnEquals.TabIndex = 18;
+            this.btnEquals.Text = "=";
+            this.btnEquals.UseVisualStyleBackColor = false;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
+            // 
+            // btCe
+            // 
+            this.btCe.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btCe.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCe.ForeColor = System.Drawing.Color.Cyan;
+            this.btCe.Location = new System.Drawing.Point(272, 112);
+            this.btCe.Name = "btCe";
+            this.btCe.Size = new System.Drawing.Size(56, 52);
+            this.btCe.TabIndex = 19;
+            this.btCe.Text = "Ce";
+            this.btCe.UseVisualStyleBackColor = false;
+            this.btCe.Click += new System.EventHandler(this.btCe_Click);
             // 
             // FrmCalculator
             // 
@@ -266,13 +298,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(354, 305);
+            this.Controls.Add(this.btCe);
+            this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnMultiplication);
             this.Controls.Add(this.btnSubtraction);
             this.Controls.Add(this.btnAddition);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDot);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCalculation);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn9);
@@ -306,13 +339,14 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnC;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCalculation;
         private System.Windows.Forms.Button btnDot;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAddition;
         private System.Windows.Forms.Button btnSubtraction;
         private System.Windows.Forms.Button btnMultiplication;
         private System.Windows.Forms.Button btnDivision;
+        private System.Windows.Forms.Button btnEquals;
+        private System.Windows.Forms.Button btCe;
     }
 }
 
