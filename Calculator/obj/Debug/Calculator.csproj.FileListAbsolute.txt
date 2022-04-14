@@ -9,3 +9,13 @@ D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.GenerateReso
 D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.exe
 D:\Visual\Proyectos_KMN_2022\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\bin\Debug\Calculator.exe
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.FrmCalculator.resources
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.exe
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Calculator\obj\Debug\Calculator.pdb

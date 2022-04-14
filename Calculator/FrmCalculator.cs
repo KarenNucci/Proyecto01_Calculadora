@@ -12,67 +12,83 @@ namespace Calculator
 {
     public partial class FrmCalculator : Form
     {
-        string operador, calculi;
+        //Lista que guarda todos los nums y operaciones
         List<string> calculation = new List<string>();
-        int num, num2, calc;
+        //Variables que guarda nums ingresados
+        int num1, num2;
+        //Variable que avisa que ya hay un cálculo realizado
         bool click = false;
+        //Variable que guarda el operador(+,-,*,/)
+        string _operator;
+
+        bool opT = false;
+        int calc;
+        string number;
+
         public FrmCalculator() { InitializeComponent(); }
 
+        public bool OperatorType(string op)
+        {
+            if (op == "+" || op == "-" || op == "=") { opT = true; }
+
+            return opT;
+        }
+
+        #region Métodos
         public int Calcular()
         {
             foreach (string S in calculation)
             {
-                if (S == Convert.ToString(0) || S == Convert.ToString(1)|| S == Convert.ToString(2))
+                //Pregunta primero si es operador, y sino se va para número (evito escribir un largo if)
+                if (OperatorType(S) == true) { opT = false; }
+                else
                 {
-                    if (num == 0) { num = Convert.ToInt32(S); }
-                    else {
+                    if (num1 == 0) { num1 = Convert.ToInt32(S); }
+                    else
+                    {
                         num2 = Convert.ToInt32(S);
-                        if (operador == "+")
+                        if (_operator == "+")
                         {
-                            calc = num + num2;
-                            num = 0;
+                            calc = num1 + num2;
+                            num1 = 0;
                             num2 = 0;
                             break;
                         }
                     }
-                    //if (num2 == 0)
-                    //{ 
-                    //    num2 = Convert.ToInt32(S);
-                    //    if (operador == "+")
-                    //    {
-                    //        calc = num + num2;
-                    //        num = 0;
-                    //        num2 = 0;
-                    //        break;
-                    //    }
-                    //}
                 }
-                if (S == "+")
-                {
-                    operador = "+";
-                    //calc = num + num2;
-                    //num = 0;
-                    //num2 = 0;
-                    //break;
-                }
-                else if (S == "-") { }
-                else if (S == "*") { }
-                else { }
             }
             return calc;
             
         }
-
-        private void btnEquals_Click(object sender, EventArgs e)
-        {
-            calculi = Convert.ToString(Calcular());
-            tbCalculation.Text += "=" + calculi;
-            click = true;
-        }
-
+        
         public void UsoOperador()
         {
-            if (!tbCalculation.Text.EndsWith(operador)) { Calcular(); }
+            if (!tbCalculation.Text.EndsWith(_operator)) { Calcular(); }
+        }
+        #endregion
+
+        #region Botones
+        #region Botones de signos
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            number = Convert.ToString(Calcular());
+            tbCalculation.Text += "=" + number;
+            click = true;
+
+            //Obtiene el largo original de la lista, que luega se irá borrando
+            int quantity = calculation.Count;
+
+            foreach (string S in calculation)
+            {
+                int i = 0; //Variable que indica índice de la lista
+                for (int j = 0; j < quantity; j++)
+                {
+                    calculation.RemoveAt(i);
+                }
+                break;
+            }
+            //Agrego el último número a la lista "nueva"
+            calculation.Add(number);
         }
 
         //Botón Borrar todo
@@ -84,21 +100,19 @@ namespace Calculator
         //Botón Suma
         private void btnAddition_Click(object sender, EventArgs e)
         {
+            _operator = "+";
 
             if (click == true)
             {
-                tbCalculation.Text = calculi;
+                tbCalculation.Text = number;
                 click = false;
-                operador = "+";
-                calculation.Add("+");
-                tbCalculation.Text += operador;
+                calculation.Add(_operator);
+                tbCalculation.Text += _operator;
             }
             else
             {
-                operador = "+";
-                calculation.Add("+");
-                tbCalculation.Text += operador;
-                //UsoOperador();}
+                calculation.Add(_operator);
+                tbCalculation.Text += _operator;
             }
         }
 
@@ -132,7 +146,9 @@ namespace Calculator
         {
 
         }
+        #endregion
 
+        #region Botones de Números
         //Botón Cero
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -142,17 +158,17 @@ namespace Calculator
         //Botón Uno
         private void btn1_Click(object sender, EventArgs e)
         {
-            calculi = "1";
-            calculation.Add("1");
-            tbCalculation.Text += calculi;
-            //calculo += "1";
+            number = "1";
+            calculation.Add(number);
+            tbCalculation.Text += number;
         }
 
         //Botón Dos
         private void btn2_Click(object sender, EventArgs e)
         {
-            tbCalculation.Text += "2";
-            //calculo += "2";
+            number = "2";
+            calculation.Add(number);
+            tbCalculation.Text += number;
         }
 
         //Botón Tres
@@ -195,6 +211,8 @@ namespace Calculator
         private void btn9_Click(object sender, EventArgs e)
         {
             
-        } 
+        }
+        #endregion
+        #endregion
     }
 }

@@ -13,3 +13,17 @@ D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.CoreCompileInputs.cach
 D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.csproj.CopyComplete
 D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.exe
 D:\Visual\Proyectos_KMN_2022\Start\obj\Debug\Start.pdb
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Start.exe.config
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Start.exe
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Start.pdb
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Calculator.exe
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Calculator.pdb
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\bin\Debug\Calculator.exe.config
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.FrmStart.resources
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.Properties.Resources.resources
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.csproj.GenerateResource.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.exe
+C:\Users\Usuario\Source\Repos\Proyecto01_Calculadora\Start\obj\Debug\Start.pdb
